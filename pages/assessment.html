@@ -1,0 +1,168 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assessment</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>SkyHigh</h2>
+        <a href="../index.html">Home</a>
+        <a href="assessment.html">Assessment</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="progress_tracker.html">Progress Tracker</a>
+        <a href="chatbot.html">Chatbot</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Assessment</h1>
+        <p>This is a placeholder for the assessment feature.</p>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment - SkyHigh</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #f5f5f5;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #2a79d2;
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .sidebar a:hover {
+            background-color: #1e5ca6;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 40px;
+        }
+
+        .main-content h1 {
+            font-size: 2em;
+            color: #2a79d2;
+            margin-bottom: 20px;
+        }
+
+        .question-box {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #2a79d2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>🚀 SkyHigh</h2>
+        <a href="../index.html">Home</a>
+        <a href="assessment.html">Assessment</a>
+        <a href="recommendations.html">Recommendations</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="progress_tracker.html">Progress Tracker</a>
+        <a href="chatbot.html">Chatbot</a>
+    </div>
+
+    <div class="main-content">
+        <h1>Career Assessment</h1>
+
+        <form id="assessmentForm">
+            <div class="question-box">
+                <label for="q1">1. What subjects do you enjoy the most?</label>
+                <select id="q1" required>
+                    <option value="">Select an option</option>
+                    <option value="science">Science & Math</option>
+                    <option value="arts">Arts & Humanities</option>
+                    <option value="commerce">Commerce & Business</option>
+                    <option value="technology">Technology & Programming</option>
+                </select>
+            </div>
+
+            <div class="question-box">
+                <label for="q2">2. How do you prefer to work?</label>
+                <select id="q2" required>
+                    <option value="">Select an option</option>
+                    <option value="independently">Independently</option>
+                    <option value="in_team">In a team</option>
+                    <option value="with_clients">With clients</option>
+                </select>
+            </div>
+
+            <div class="question-box">
+                <label for="q3">3. What is your preferred work style?</label>
+                <select id="q3" required>
+                    <option value="">Select an option</option>
+                    <option value="creative">Creative & Innovative</option>
+                    <option value="analytical">Analytical & Logical</option>
+                    <option value="practical">Practical & Hands-on</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit Assessment</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('assessmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Assessment submitted successfully!\nYour answers have been recorded.');
+        });
+    </script>
+</body>
+
+</html>
